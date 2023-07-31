@@ -14,26 +14,31 @@
 2. Extract the zip file.
 3. Create a database.
 4. Goto project folder.
-5. Run below commands:
+5. Copy .env.example filr to .env and Edit the .env file for database connection.
+6. Run command below
+   
+```sh
+npm install or yarn
 
-conposer install
+npm run dev or yarn dev
+```
 
-npm install
-
-npm run dev
-
-6.Copy .env.example filr to .env and Edit the .env file for database connection.
-
-DB_DATABASE=your_database_name
-
-DB_USERNAME=your_database_username
-
-DB_PASSWORD=your_database_passward
+    DB_DATABASE=your_database_name
+    
+    DB_USERNAME=your_database_username
+    
+    DB_PASSWORD=your_database_passward
 
 7. Then run below command:
 
-php artisan migrate
+```sh
+composer install
 
 php artisan key:generate
 
+php artisan migrate
+
 php artisan serve
+```
+
+
